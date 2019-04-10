@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class BossHPController : MonoBehaviour
 {
     public int BossHPMAX;
@@ -10,6 +11,7 @@ public class BossHPController : MonoBehaviour
     private int AttackPower;
     [SerializeField]
     private int BossHPUpdateration;
+
 
 
     // Start is called before the first frame update
@@ -28,12 +30,17 @@ public class BossHPController : MonoBehaviour
         {            
             UpdateBossHP();
         }
+
     }
 
     //攻撃によるHP減少関数
     public void ReduceBossHP()
     {
         BossHP -= AttackPowerController.GetComponent<AttackPowerController>().AttackPower;
+        if (BossHP < 0)
+        {
+            BossHP = 0;
+        }
     }
     
     //新ボスのHP設定

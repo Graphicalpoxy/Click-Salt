@@ -20,9 +20,7 @@ public class ShakeBuffLevelController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        ShakeCount = ShakeController.GetComponent<ShakeController>().ShakeCount;
-        Debug.Log(BuffLevel);
-       
+        ShakeCount = ShakeController.GetComponent<ShakeController>().ShakeCount;              
         
         if (ShakeCount == 0)
         {

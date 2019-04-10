@@ -8,16 +8,15 @@ public class ShakeController : MonoBehaviour
     private Vector3 preAcceleration;
     float DotProduct;
     public int ShakeCount;
-    private float ShakeTime;
-    private float ShakeContinueTime;
+    private float ShakeTime = 0f;
+    private const float ShakeContinueTime = 3.0f;
     [SerializeField]
     private GameObject Salt;
 
     // Start is called before the first frame update
     void Start()
     {
-        ShakeTime = 0f;
-        ShakeContinueTime = 3.0f;
+
     }
 
     // Update is called once per frame

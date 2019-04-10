@@ -577,7 +577,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AnimeObj: {fileID: 6197153795390000536}
-  BossHPController: {fileID: 0}
 --- !u!1 &7983260508883360936
 GameObject:
   m_ObjectHideFlags: 0
